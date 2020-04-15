@@ -1,7 +1,15 @@
+import axios from 'axios'
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+// 导入基本样式
+import './assets/css/base.css'
 import './plugins/element.js'
+import router from './router'
+
+
+axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
+Vue.prototype.$http = axios
+
 
 Vue.config.productionTip = false
 
