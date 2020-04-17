@@ -1,11 +1,11 @@
 import axios from 'axios'
 import Vue from 'vue'
+import TreeTable from 'vue-table-with-tree-grid'
 import App from './App.vue'
 // 导入基本样式
 import './assets/css/base.css'
 import './plugins/element.js'
 import router from './router'
-
 
 axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
 axios.interceptors.request.use(config => {
@@ -14,6 +14,7 @@ axios.interceptors.request.use(config => {
 })
 Vue.prototype.$http = axios
 
+Vue.component('tree-table', TreeTable)
 
 Vue.config.productionTip = false
 
