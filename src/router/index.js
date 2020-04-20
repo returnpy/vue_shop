@@ -6,6 +6,7 @@ import GoodsList from '../components/goods/List'
 import Params from '../components/goods/Params'
 import Home from '../components/Home'
 import Login from '../components/Login'
+import Order from '../components/order/Order'
 import Rights from '../components/power/Rights'
 import Roles from '../components/power/Roles'
 import Users from '../components/user/Users'
@@ -59,6 +60,10 @@ Vue.use(VueRouter)
           path: '/goods/add',
           component: Add
         },
+        {
+          path: '/orders',
+          component: Order
+        }
       ]
     },
     {
