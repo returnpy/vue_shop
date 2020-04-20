@@ -9,6 +9,7 @@ import Login from '../components/Login'
 import Order from '../components/order/Order'
 import Rights from '../components/power/Rights'
 import Roles from '../components/power/Roles'
+import Report from '../components/report/Report'
 import Users from '../components/user/Users'
 import Welcome from '../components/Welcome'
 
@@ -63,6 +64,10 @@ Vue.use(VueRouter)
         {
           path: '/orders',
           component: Order
+        },
+        {
+          path: '/reports',
+          component: Report
         }
       ]
     },
