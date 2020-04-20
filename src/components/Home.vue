@@ -18,7 +18,7 @@
           :collapse="isCollapse"
           :collapse-transition="false"
           router
-          :default-active="$route.path"
+          :default-active="'/' + $route.path.split('/')[1]"
         >
           <el-submenu
             v-for="item in menuList"

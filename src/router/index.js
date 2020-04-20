@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Add from '../components/goods/Add'
 import Category from '../components/goods/Category'
+import GoodsList from '../components/goods/List'
 import Params from '../components/goods/Params'
 import Home from '../components/Home'
 import Login from '../components/Login'
@@ -48,7 +50,15 @@ Vue.use(VueRouter)
         {
           path: '/params',
           component: Params
-        }
+        },
+        {
+          path: '/goods',
+          component: GoodsList
+        },
+        {
+          path: '/goods/add',
+          component: Add
+        },
       ]
     },
     {
